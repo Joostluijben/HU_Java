@@ -1,21 +1,28 @@
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
 package week1.les1.opdracht3;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Student s1 = new Student("Joost");
-		System.out.println("naam: " + s1.getNaam());
-		System.out.println("nummer: " + s1.getStudentNummer());
-		s1.setStudentNummer(12345678);
-		System.out.println("toString: " + s1.toString());
+		Student student1 = new Student("Joost");
+		System.out.println("naam: " + student1.getNaam());
+		System.out.println("nummer: " + student1.getStudentNummer());
+		student1.setStudentNummer(12345678);
+		System.out.println("toString: " + student1.toString());
 		System.out.println();
 		
-		Student s2 = new Student("Marije", 98765432);
-		System.out.println("naam: " + s2.getNaam());
-		System.out.println("nummer: " + s2.getStudentNummer());
-		System.out.println("toString: " + s2.toString());
-		s2.setStudentNummer(123);
-		System.out.println("toString: " + s2.toString());
+		Student student2 = new Student("Marije", 98765432);
+		System.out.println("naam: " + student2.getNaam());
+		System.out.println("nummer: " + student2.getStudentNummer());
+		System.out.println("toString: " + student2.toString());
+		student2.setStudentNummer(123);
+		System.out.println("toString: " + student2.toString());
 	}
 
 }

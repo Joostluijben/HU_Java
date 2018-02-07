@@ -1,8 +1,15 @@
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
 package week2.les3.opdracht2;
 
 public class Eigenaar {
 	private String naam;
-	private int giroNr;
+	private int giroNummer;
 	private Huisdier huisdier;
 	
 	public Eigenaar(String nm) {
@@ -18,6 +25,6 @@ public class Eigenaar {
 	}
 	
 	public String toString() {
-		return naam + " heeft giro " + giroNr + ". En is het baasje van " + huisdier;
+		return naam + " heeft giro " + giroNummer + ". En is het baasje van " + huisdier;
 	}
 }

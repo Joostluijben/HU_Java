@@ -1,4 +1,11 @@
-package week2.zelfstudie1;
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
+package zelfstudie.week2.zelfstudie1;
 
 public class Main {
 	public static void main(String[] args) {

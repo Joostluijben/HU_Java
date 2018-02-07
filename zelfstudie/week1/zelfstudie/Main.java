@@ -1,4 +1,11 @@
-package week1.zelfstudie;
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
+package zelfstudie.week1.zelfstudie;
 
 import java.lang.Math;
 

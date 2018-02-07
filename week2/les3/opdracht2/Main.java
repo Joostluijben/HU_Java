@@ -1,20 +1,27 @@
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
 package week2.les3.opdracht2;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Eigenaar e1 = new Eigenaar("Willem de Moller");
-		System.out.println(e1);
-		e1.setBeestje( new Huisdier("Nero", "Dobermann") );
-		System.out.println(e1);
+		Eigenaar eigenaar1 = new Eigenaar("Willem de Moller");
+		System.out.println(eigenaar1);
+		eigenaar1.setBeestje( new Huisdier("Nero", "Dobermann") );
+		System.out.println(eigenaar1);
 		System.out.println();
-		Eigenaar e2 = new Eigenaar("Pluk");
-		System.out.println(e2);
-		e2.setBeestje( new Huisdier("Zaza", "kakkerlak") );
-		System.out.println(e2);
+		Eigenaar eigenaar2 = new Eigenaar("Pluk");
+		System.out.println(eigenaar2);
+		eigenaar2.setBeestje( new Huisdier("Zaza", "kakkerlak") );
+		System.out.println(eigenaar2);
 		System.out.println();
-		System.out.println(e1.getBeestje());
-		System.out.println(e2.getBeestje());
+		System.out.println(eigenaar1.getBeestje());
+		System.out.println(eigenaar2.getBeestje());
 
 	}
 

@@ -1,19 +1,26 @@
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
 package week2.les3.opdracht1;
 
 public class Eigenaar {
 	private String naam;
-	private int giroNr;
+	private int giroNummer;
 	
 	public Eigenaar(String nm) {
 		naam = nm;
 	}
 	
 	public void setGiroNr(int nr) { 
-		giroNr = nr; 
+		giroNummer = nr; 
 	}
 	
 	public int getGiroNr() { 
-		return giroNr; 
+		return giroNummer; 
 	}
 	
 	public String getNaam() { 
@@ -21,6 +28,6 @@ public class Eigenaar {
 	}
 	
 	public String toString() {
-		return naam + " heeft giro " + giroNr;
+		return naam + " heeft giro " + giroNummer;
 	}
 }

@@ -1,20 +1,27 @@
+/**
+ * @author Joost Luijben
+ *
+ * @studentnummer 1718331
+ * 
+ * @opdracht week3.les5.opdracht1
+ */
 package week2.les4.practicum3;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Klas k = new Klas("V1Z");
-		Leerling l = new Leerling("Hans");
-		k.voegLeerlingToe(l);
-		l = new Leerling("Jan");
-		k.voegLeerlingToe(l);
-		l = new Leerling("Wim");
-		k.voegLeerlingToe(l);
-		System.out.println(k);
-		k.wijzigCijfer("Hans", 7.6);
-		k.wijzigCijfer("Klaas", 7.6);
-		System.out.println(k.toString());
-		System.out.println("Aantal leerlingen: " + k.aantalLeerlingen()); 
+		Klas klant = new Klas("V1Z");
+		Leerling leerling = new Leerling("Hans");
+		klant.voegLeerlingToe(leerling);
+		leerling = new Leerling("Jan");
+		klant.voegLeerlingToe(leerling);
+		leerling = new Leerling("Wim");
+		klant.voegLeerlingToe(leerling);
+		System.out.println(klant);
+		klant.wijzigCijfer("Hans", 7.6);
+		klant.wijzigCijfer("Klaas", 7.6);
+		System.out.println(klant.toString());
+		System.out.println("Aantal leerlingen: " + klant.aantalLeerlingen()); 
 
 	}
 
