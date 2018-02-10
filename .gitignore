@@ -1,3 +1,6 @@
-*
-!.gitignore
-!*src/
+.classpath
+.project
+bin/
+doc/
+javadoc.xml
+.settings
