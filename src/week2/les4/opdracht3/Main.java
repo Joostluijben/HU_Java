@@ -20,7 +20,7 @@ public class Main {
 			System.out.println("Voer een positief getal in: ");
 				Scanner scanner = new Scanner(System.in);
 				String invoer = scanner.nextLine();
-				double getal = Integer.parseInt(invoer);
+				double getal = Double.parseDouble(invoer);
 				if (getal != 0 && getal >= 0) {
 					list.add(getal);
 				}

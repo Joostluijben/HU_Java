@@ -21,13 +21,14 @@ public class Huisdier {
 		return ras; 
 	}
 	
-	public String toString() {
-		return naam + ", de " + ras + ", weegt " + gewicht + " kg. \nen de eigenaar is: "
-				+ baasje;
-	}
 	
 	public void setBaasje(Eigenaar e) {
 		baasje = e;
 		
+	}
+	
+	public String toString() {
+		return naam + ", de " + ras + ", weegt " + gewicht + " kg. \nen de eigenaar is: "
+				+ baasje;
 	}
 }
