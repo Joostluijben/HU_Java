@@ -10,7 +10,6 @@ package week2.les4.practicum3;
 public class Leerling {
 	private String naam;
 	private double cijfer;
-	private Klas klas;
 	
 	public Leerling(String nm) {
 		naam = nm;

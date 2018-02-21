@@ -6,11 +6,13 @@
  * @opdracht week3.les5.opdracht1
  */
 package week2.les3.practicum2;
+import java.util.ArrayList;
 
 public class AutoHuur {
 	private int aantalDagen;
 	private Auto gehuurdeAuto;
 	private Klant huurder;
+	private ArrayList<Auto> gehuurdeAutos = new ArrayList<Auto>(); 
 	public AutoHuur() {
 	}
 	
@@ -19,7 +21,12 @@ public class AutoHuur {
 	}
 	
 	public void setGehuurdeAuto(Auto gA) {
-		gehuurdeAuto = gA;
+		if (!gehuurdeAutos.contains(gA)) {
+			gehuurdeAuto = gA;
+			gehuurdeAutos.add(gA);
+		}
+		
+		
 	}
 	
 	public Auto getGehuurdeAuto() {
@@ -35,7 +42,7 @@ public class AutoHuur {
 	}
 	
 	public double totaalPrijs() {
-		return 1;
+		return (aantalDagen * gehuurdeAuto.getPrijsPerDag()) * ((100 - huurder.getKorting()) / 100);
 	}
 	
 	public String toString() {
@@ -44,7 +51,7 @@ public class AutoHuur {
 		if (gehuurdeAuto == null || huurder == null) {
 			s = "er is geen auto bekend\ner is geen huurder bekend\nAantal dagen: 0 en dat kost 0.0";
 		} else {
-			s += gehuurdeAuto.getPrijsPerDag();
+			s += this.totaalPrijs();
 		}
 		return s;
 	}

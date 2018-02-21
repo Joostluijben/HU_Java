@@ -38,6 +38,10 @@ public class Klas {
 	}
 	
 	public String toString() {
-		return "In klas" + klasCode + " zitten de volgende leerlingen: " + leerlingen;
+		String message = "In klas " + klasCode + " zitten de volgende leerlingen:";
+		for (Leerling leerling : leerlingen) {
+			message += "\n"+leerling;
+		}
+		return message + "\n";
 	}
 }
