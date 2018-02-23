@@ -42,17 +42,22 @@ public class AutoHuur {
 	}
 	
 	public double totaalPrijs() {
-		return (aantalDagen * gehuurdeAuto.getPrijsPerDag()) * ((100 - huurder.getKorting()) / 100);
+		double totaal = 0;
+		if (!(gehuurdeAuto == null)  || !(huurder== null)) {
+			return (aantalDagen * gehuurdeAuto.getPrijsPerDag()) * ((100 - huurder.getKorting()) / 100);
+		}
+		return totaal;
 	}
 	
 	public String toString() {
-		String s = "autotype: " + gehuurdeAuto + "\n" + huurder + 
-		"\nAantal dagen: " + aantalDagen + " en dat kost ";
+		
+		String s = "";
 		if (gehuurdeAuto == null || huurder == null) {
-			s = "er is geen auto bekend\ner is geen huurder bekend\nAantal dagen: 0 en dat kost 0.0";
+			s += "er is geen auto bekend\ner is geen huurder bekend\n";
 		} else {
-			s += this.totaalPrijs();
+			s +=  "autotype: " + gehuurdeAuto + "\n" + huurder + "\n";
 		}
+		s += "Aantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
 		return s;
 	}
 	

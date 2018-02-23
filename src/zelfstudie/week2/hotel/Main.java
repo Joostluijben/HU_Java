@@ -10,6 +10,9 @@ package zelfstudie.week2.hotel;
 /**
  * 
  */
-public class Hotel {
-	
+public class Main {
+	public static void main(String[] args) {
+		
+	}
+
 }
