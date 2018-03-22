@@ -17,4 +17,9 @@ public class Klant {
 		naam = nm;
 		adres = adr;
 	}
+	
+	public String toString() {
+		String s = "Op naam van " + naam + ". Deze persoon woont op " + adres;
+		return s;
+	}
 }

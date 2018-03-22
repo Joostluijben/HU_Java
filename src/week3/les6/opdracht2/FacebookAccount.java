@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * 
  */
-public class FacebookAccount {
+public class FacebookAccount{
 	private String naam;
 	private ArrayList<Vriend> vrienden = new ArrayList<Vriend>();
 	
